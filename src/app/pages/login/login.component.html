@@ -1,1 +1,28 @@
-<app-default-login-layout></app-default-login-layout>
+<app-default-login-layout
+    title="Login into your account"
+    primaryBtnText="Login Now"
+    secondaryBtnText="Signup Now"
+>
+    <form [formGroup]="loginForm" >
+        <app-primary-input
+            formControlName="email"
+            inputName="email"
+            type="email"
+            label="Email"
+            placeholder="johndoe@email.com"
+        
+        >
+            <img src="/assets/svg/email-icon.svg" alt="">
+        </app-primary-input>
+        <app-primary-input
+            formControlName="email"
+            inputName="password"
+            type="password"
+            label="Your Password"        
+        >
+            <img src="/assets/svg/password-icon.svg" alt="">
+        </app-primary-input>
+
+        <span>Forgot password?</span>
+    </form>
+</app-default-login-layout>
